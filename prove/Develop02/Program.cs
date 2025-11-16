@@ -9,7 +9,7 @@ class Program
 
         Console.WriteLine("Welcome to the Journal App!");
         
-        while (choice != "4")
+        while (choice != "5")
         {
             Console.WriteLine("\nMenu:");
             Console.WriteLine("1. Write a new journal entry");
@@ -42,4 +42,5 @@ class Program
                     break;
             }
         }
+    }
 }

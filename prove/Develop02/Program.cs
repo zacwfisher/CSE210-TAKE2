@@ -1,6 +1,9 @@
 using System;
 
 class Program
+
+// added: Mood property to the Entry class and captured it the 'Write entry' process
+
 {
     static void Main(string[] args)
     {

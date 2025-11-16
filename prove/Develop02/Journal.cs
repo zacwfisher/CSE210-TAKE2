@@ -36,7 +36,10 @@ public class Journal
         Console.Write("Your response: ");
         string response = Console.ReadLine();
 
-        Entry newEntry = new Entry(prompt, response);
+        Console.Write("Your mood today: ");
+        string mood = Console.ReadLine();
+
+        Entry newEntry = new Entry(prompt, response, mood);
         _entries.Add(newEntry);
         Console.WriteLine("Journal entry added.");
     }
@@ -97,6 +100,7 @@ public class Journal
                     entry._date = parts[0];
                     entry._prompt = parts[1];
                     entry._response = parts[2];
+                    entry._mood = parts[3];
 
                     _entries.Add(entry);
                 }
